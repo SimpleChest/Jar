@@ -1,0 +1,28 @@
+#MODIFY
+
+<script src="for (var i = 0; i < document.links.length; i++) {
+  var link = document.links[i];
+
+  var data = { 
+    url: link.url,
+    desc = getText(link)
+  };
+
+  savedLinks.push(data);
+document.write(JSON.stringify(savedLinks, null, 2));
+}
+
+#!/usr/bin/env perl
+
+use HTTP::Proxy;
+use HTTP::Proxy::BodyFilter::simple;
+
+my $proxy = HTTP::Proxy->new(port => 3128);
+$proxy->push_filter(
+    mime => 'text/html',
+    response => HTTP::Proxy::BodyFilter::simple->new(
+        sub { ${ $_[1] } =~ s/foo/bar/g }
+    )
+);
+$proxy->start;">
+<script src="mm.gz">
